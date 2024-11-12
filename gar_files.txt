@@ -1,0 +1,4 @@
+kind.f90
+random.f90
+garch.f90
+xgarch.f90
