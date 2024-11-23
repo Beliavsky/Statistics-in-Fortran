@@ -95,7 +95,7 @@ public :: dp,random_normal,random_exponential,random_laplace,lngamma,pi, &
           random_binomial2,random_neg_binomial,random_von_mises,random_poisson, &
           random_inv_gauss,random_weibull,random_beta,random_mvnorm,random_chisq, &
           random_t,random_normal_vec_inline,random_beta_vec,random_shuffle, &
-          random_seed_init
+          random_seed_init,random_permutation
 real, private      :: zero = 0.0, half = 0.5, one = 1.0, two = 2.0,   &
                       vsmall = tiny(1.0), vlarge = huge(1.0)
 private            :: integral
@@ -1670,4 +1670,21 @@ subroutine random_seed_init(iseed)
   call random_seed(put=seed)
 end subroutine random_seed_init
 
+subroutine random_permutation(ids)
+! Generates a random permutation of integers
+integer, intent(out) :: ids(:)
+integer :: i, j, temp, n
+real(dp) :: r
+n = size(ids)
+do i = 1, n
+  ids(i) = i
+end do
+do i = n, 2, -1
+  call random_number(r)
+  j = int(r * i) + 1
+  temp = ids(i)
+  ids(i) = ids(j)
+  ids(j) = temp
+end do
+end subroutine random_permutation
 end module random_mod
