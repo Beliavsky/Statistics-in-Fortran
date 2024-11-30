@@ -1,3 +1,7 @@
+! translated from C++ code at https://www.johndcook.com/blog/standard_deviation/
+! using Welford's method to compute variance, in blog post
+! "Accurately computing running variance"
+
 module basic_stats_mod
     use kind_mod, only: dp
     implicit none
