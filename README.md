@@ -1,4 +1,4 @@
-# Statistics-in-Fortran
+# Statistics in Fortran
 Statistical procedures in Fortran
 
 Compile the RANSAC program for robust multiple linear regression with
