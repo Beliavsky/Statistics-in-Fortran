@@ -1,0 +1,1 @@
+gfortran -o basic_stats.exe kind.f90 basic_stats.f90 xbasic_stats.f90
