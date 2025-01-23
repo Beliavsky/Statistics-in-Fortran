@@ -97,3 +97,17 @@ Sample results:
             est. ACF:   0.2354  -0.6053  -0.4075   0.2595   0.3889
 ```
 
+### Solve an nxn set of linear equations
+
+Compile with 
+
+`gfortran kind.f90 linear_algebra.f90 xsolve.f90`
+
+Sample output:
+
+```
+ n:        1000
+ min, max b:   7.4492505928791530E-004  0.99843222000461973     
+ min, max Ax-b:  -2.2204460492503131E-015   2.5535129566378600E-015
+ sum of absolute errors:   3.6690052038212961E-013
+```
