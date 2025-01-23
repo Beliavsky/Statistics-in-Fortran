@@ -1,7 +1,9 @@
 # Statistics in Fortran
 Statistical procedures in Fortran
 
-Compile the RANSAC program for robust multiple linear regression with
+### RANSAC program for robust multiple linear regression
+
+Compile with
 
 `gfortran kind.f90 random.f90 loss_functions.f90 linear_algebra.f90 linear_regressor.f90 ransac.f90 xransac.f90 `
 
