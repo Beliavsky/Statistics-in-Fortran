@@ -97,7 +97,7 @@ Sample results:
             est. ACF:   0.2354  -0.6053  -0.4075   0.2595   0.3889
 ```
 
-### Solve an nxn set of linear equations
+### Solve an NxN set of linear equations
 
 Compile with 
 
