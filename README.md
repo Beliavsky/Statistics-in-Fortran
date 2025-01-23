@@ -5,7 +5,7 @@ Statistical procedures in Fortran
 
 Compile with
 
-`gfortran kind.f90 random.f90 loss_functions.f90 linear_algebra.f90 linear_regressor.f90 ransac.f90 xransac.f90 `
+`gfortran -std=f2018 kind.f90 random.f90 loss_functions.f90 linear_algebra.f90 linear_regressor.f90 ransac.f90 xransac.f90 `
 
 It also compiles and runs with ifort. In the output below, one sees that the RANSAC estimates of the regression coefficients are much closer to the true ones than the OLS estimates.
 
